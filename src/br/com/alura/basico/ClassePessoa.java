@@ -1,4 +1,4 @@
-package alura.basico;
+package br.com.alura.basico;
 
 public class ClassePessoa {
 

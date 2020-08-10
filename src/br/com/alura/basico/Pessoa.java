@@ -1,4 +1,4 @@
-package alura.basico;
+package br.com.alura.basico;
 
 public class Pessoa {
 
@@ -31,4 +31,8 @@ public class Pessoa {
 	// ## SHADOWING >> ACESSA A VARIÁVEL LOCAL NUNCA A DE INSTANCIA E DE CLASSE;
 	// ## SHADOWING >> CASO QUEIRA ACESSAR A VARIAVEL DE INSTANCIA EU USO  THIS. Ex(this.y=y;)
 	// ## SHADOWING >> CASO QUEIRA ACESSAR A VARIAVEL DE CLASSE EU USO  NOMECLASSE. Ex(Pessoa.x = x;)
+
+	String nome;
+	Endereco endereco; // mesmo pacote, referencia >> Posso acessar classe do mesmo pacote sem precisa-la importa-la
+	
 }

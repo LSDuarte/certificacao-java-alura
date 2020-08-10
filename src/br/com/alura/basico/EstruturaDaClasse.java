@@ -1,4 +1,4 @@
-package alura.basico; // pacote, primeira coisa que vem no arquivo java - é opcional
+package br.com.alura.basico; // pacote, primeira coisa que vem no arquivo java - é opcional
 //1º coisa --- PACKAGE
 
 // package br.com.caelum.certificacao

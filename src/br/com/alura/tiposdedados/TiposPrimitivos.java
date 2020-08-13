@@ -52,7 +52,6 @@ public class TiposPrimitivos {
 		float ffff = 13.1F;
 
 		// D, L & F... .DOUBLE, LONG OU FLOAT
-
 		int ii = 0761; // representação OCTAL, na base 8 >> iniciando com o 0
 		
 		// valores corretos na base octal 0 à 7, 8 é invalido

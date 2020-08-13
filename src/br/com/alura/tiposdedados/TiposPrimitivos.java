@@ -68,10 +68,53 @@ public class TiposPrimitivos {
 		//PARA FLOAT PRECISA TER F 
 		float f2 = 2e3f;
 		
-		long x2 = 1_234_567_891_234l; // undercor sempre entre numeros, "representando" uma conta bancaria, long pois int não cabe.
+		long x2 = 1_234_567_891_234l; // undercor sempre entre numeros, "representando" uma conta bancaria, long pois int não cabe. entre os dois lados do _ é necessário ter um número nos dois lados.
 		
 		// 18min42s retornar video.
 		
+		int xx = 0xF_F; // pode ter "_" por que 0xFF é 255, se da um valor real, então pode.
+	
+		char ch = 66; // B  >>> 65 é "A"
+		System.out.println(ch);
+		
+		// valor numero e caracter não é o mesmo
+		char sete = 7;
+		System.out.println(sete + " << -- aqui o valor");
+		
+		// carater unicod \ u 
+		char omega = '\u03A9';
+		System.out.println(omega + " << -- aqui o valor");
+		
+		// PALAVRAS RESERVADAS QUE NÃO PODEM SER USADAS.
+		
+		// public, system, true, boolean, out, char, int, etc
+		
+		// VALORES LITERAIS QUE NÃO PODEM USAR
+		
+		// true, false, e null >>> toda palavra reservada do JAVA é minuscula >>> DECORAR
+	
+		boolean bonitão = true; // ã pode!
+		boolean ricão$$$; // pode
+		boolean bonito_e_rico = false; // pode
+		boolean bonitoERico;  // pode
+		
+		boolean _valor;
+		boolean $valor; // valido
+		
+		// não é recomendado e nem usal, mas pode!
+		
+		// numero não pode!
+		// boolean 8valor; 
+		
+		// case sensitive - Diferencia Maiusculo de Minusculo
+		
+		// variaveis distintas.
+		int idade = 1;
+		int IDADE = 2;
+		int Idade = 3;
+		
+		// # não pode
+		// int idade#preco = 1;
 	}
 
 }

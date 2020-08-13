@@ -15,7 +15,6 @@ public class Pedido {
 
 	// UMA CLASSE COM VISIBILIDADE DEFAULT SÓ PODE SER ACESSADA DENTRO DO MESMO	PACOTE.
 
-
 	// alura.basico.Pessoa cliente;
 	Pessoa cliente;
 	Endereco endereco;

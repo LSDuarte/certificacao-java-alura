@@ -22,7 +22,7 @@ public class TiposDeVariaveis {
 		}
 
 		// variavel do tipo membro, não precisa ser inicializada;
-		Carro carro = new Carro();
+		Carros carro = new Carros();
 		System.out.println("Valor Inteiro: " + carro.ano); // inicialização padrão, 0
 		System.out.println("Valor Char: " + carro.primeiraLetra); // char é igual == 0, porém não aparece;
 		System.out.println(carro.primeiraLetra == 0); // char é igual == 0, porém não aparece; padrão java, char é um valor numerico. - tudo que é compativel com tipo numerico, padrão é 0
@@ -51,7 +51,7 @@ public class TiposDeVariaveis {
 
 }
 
-class Carro {
+class Carros {
 	int ano;
 	char primeiraLetra;
 	boolean usado;

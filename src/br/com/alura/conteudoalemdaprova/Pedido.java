@@ -6,7 +6,6 @@ import br.com.alura.basico.Endereco;
 import br.com.alura.basico.Pessoa;
 import static br.com.alura.basico.Util.TAMANHO;
 import static br.com.alura.basico.Util.maior;
-
 /**
  * @author LSDuarte
  *

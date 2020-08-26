@@ -33,6 +33,25 @@ public class Pessoa {
 	// ## SHADOWING >> CASO QUEIRA ACESSAR A VARIAVEL DE CLASSE EU USO  NOMECLASSE. Ex(Pessoa.x = x;)
 
 	String nome;
+	int idade;
 	Endereco endereco; // mesmo pacote, referencia >> Posso acessar classe do mesmo pacote sem precisa-la importa-la
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public int getIdade() {
+		return idade;
+	}
+	
+	public void setNome(String nome, int idade) {
+		this.nome = nome;
+		this.idade = idade;
+	}
+	
+	// posso chamar o metodo sem por . é opcional
+	public void imprime() {
+		System.out.println(getNome());
+	}
 	
 }

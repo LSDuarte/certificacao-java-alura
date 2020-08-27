@@ -23,5 +23,4 @@ public class VariaveisNoMesmoEscopoComMesmoNome {
 //		String args[] = null;
 		
 	}
-
 }

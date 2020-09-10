@@ -10,7 +10,7 @@ public class Carro {
 	int ano;
 
 	// construtor
-	Carro() {
+	public Carro() {
 		ano = 2014;
 	}
 

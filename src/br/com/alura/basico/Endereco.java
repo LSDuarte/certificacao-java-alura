@@ -10,7 +10,11 @@ public class Endereco {
 	String numero;
 	String bairro;
 
-	public static void main(String[] args) {
+	protected Endereco(String rua) {
+		super();
+	}
+
+	protected Endereco() {
 
 	}
 

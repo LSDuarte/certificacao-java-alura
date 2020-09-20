@@ -11,18 +11,18 @@ public class OperadoresAritmeticos {
 		int oito = dez - dois;
 		int vinte = dez * dois;
 		int cinco = dez / dois;
-		int restoDaDivisão = 5 % 2; // MOD >>> resto da divisão
+		int restoDaDivisao = 5 % 2; // MOD >>> resto da divisï¿½o
 		
 		System.out.println("Soma: " + doze);
-		System.out.println("Subtração: " + oito);
-		System.out.println("Multiplicação: " + vinte);
-		System.out.println("Divisão: " + cinco);
-		System.out.println("Resto da Divisão: " + restoDaDivisão); 
+		System.out.println("Subtraï¿½ï¿½o: " + oito);
+		System.out.println("Multiplicaï¿½ï¿½o: " + vinte);
+		System.out.println("Divisï¿½o: " + cinco);
+		System.out.println("Resto da Divisï¿½o: " + restoDaDivisao); 
 
 		
-		// DEVOLVE NO MÍNIMO INT ( MAIOR DOS DOIS TIPOS ENVOLVIDOS )
+		// DEVOLVE NO Mï¿½NIMO INT ( MAIOR DOS DOIS TIPOS ENVOLVIDOS )
 		// INT MAIS INT DEVOLVE INT
-		// INT MAIS LONG DEVOLVE LONG PORQUE LONGE É MAIOR
+		// INT MAIS LONG DEVOLVE LONG PORQUE LONGE ï¿½ MAIOR
 		
 		byte doiss = 2;
 		byte dezz = 10;
@@ -30,14 +30,14 @@ public class OperadoresAritmeticos {
 		// devolve int por causa da soma aritmetica 
 		byte dozee = (byte) (doiss + dezz);
 		
-		//Lembrar tabela de conversão
+		//Lembrar tabela de conversï¿½o
 		
 //		int divZero = 5 / 0; // erro 
-//		int divZeero =  (5 / 0.0); // erro - perde precisão
-//		double divZeeero = 5.0 / 0; // pode pois é ponto flutuante >> result >> infinity
-//		System.out.println("Resto da Divisão: " + divZeeero); 
+//		int divZeero =  (5 / 0.0); // erro - perde precisï¿½o
+//		double divZeeero = 5.0 / 0; // pode pois ï¿½ ponto flutuante >> result >> infinity
+//		System.out.println("Resto da Divisï¿½o: " + divZeeero); 
 		
-		// Divisão por 0 somente com ponto flutuante, double, float
+		// Divisï¿½o por 0 somente com ponto flutuante, double, float
 		
 	//	System.out.println("Int" + (dois + 0) / 0); ERRO
 		System.out.println("Double: " + (dois + 0.0) / 0); // INFINITY

@@ -29,6 +29,7 @@ public class TestaHeranca {
 		System.out.println(g.toString());
 		System.out.println(g);
 		System.out.println("Estou com um: " + g);
+	
 	}
 
 }

@@ -51,7 +51,7 @@ public class TestaCasting {
 }
 
 interface Automatico {}
-class Moto extends Veiculo {}
-class Veiculo {}
-class Carro extends Veiculo {}
+class VeiculoR {}
+class Moto extends VeiculoR {}
+class Carro extends VeiculoR {}
 class CarroAutomatico extends Carro implements Automatico {}

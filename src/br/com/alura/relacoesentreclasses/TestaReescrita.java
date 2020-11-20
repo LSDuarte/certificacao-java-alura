@@ -2,7 +2,7 @@ package br.com.alura.relacoesentreclasses;
 
 public class TestaReescrita {
 	
-	static void metodo(Veiculo v) {
+	static void metodo(VeiculoT v) {
 		v.liga();
 	}
 
@@ -15,15 +15,15 @@ public class TestaReescrita {
 		System.out.println("------------------------------------------");
 		//polimorfismo >> um objeto do tipo helicoptero é um objeto do tipo veiculo
 		//em tempo de compilação, o metodo vai procurar o metodo
-		Veiculo h2 = new Helicoptero();
+		VeiculoT h2 = new Helicoptero();
 		h1.liga();
 		
 		System.out.println("------------------------------------------");
-		Veiculo h3 = new FabricaDeVeiculo().fabrica();
+		VeiculoT h3 = new FabricaDeVeiculo().fabrica();
 		h3.liga();
 		
 		System.out.println("------------------------------------------");
-		Veiculo h4 = new FabricaDeHexaDroid().fabrica();
+		VeiculoT h4 = new FabricaDeHexaDroid().fabrica();
 		h4.liga();
 		
 		System.out.println("------------------------------------------");
@@ -32,14 +32,14 @@ public class TestaReescrita {
 		
 		System.out.println("------------------------------------------");
 		metodo(new HexaDroid());
-		metodo(new Veiculo());
+		metodo(new VeiculoT());
 		metodo(new Helicoptero());
 	}
 
 }
 
 //filho
-class Helicoptero extends Veiculo {
+class Helicoptero extends VeiculoT {
 	//mesma assintura, é uma reescrita de metodo
 	public void liga() {
 		System.out.println("ligando o helicoptero!");
@@ -47,24 +47,24 @@ class Helicoptero extends Veiculo {
 }
 
 // pai
-class Veiculo {
+class VeiculoT {
 	public void liga() {
 		System.out.println("Veiculo está sendo ligado!");
 	}
 }
 
-interface A {
+interface AA {
 	void x();
 }
 
-class B implements A {
+class BB implements AA {
 	//sempre publica, pois TODA INTERFACE OS METODOS SÃO PUBLICAS, QUALQUER OUTRA DEFINIÇÃO, NÃO COMPILA.
 	public void x() {
 		
 	}
 }
 
-abstract class Droid extends Veiculo {
+abstract class Droid extends VeiculoT {
 	public abstract void liga();
 }
 
@@ -77,8 +77,8 @@ class HexaDroid extends Droid {
 }
 
 class FabricaDeVeiculo {
-	Veiculo fabrica() {
-		return new Veiculo();
+	VeiculoT fabrica() {
+		return new VeiculoT();
 	}
 }
 
@@ -91,7 +91,7 @@ class FabricaDeHexaDroid extends FabricaDeVeiculo {
 
 
 
-class C {
+class CC {
 	public void metodo() {
 		System.out.println("C");
 //		this.metodo2();
@@ -101,20 +101,20 @@ class C {
 //	}
 }
 
-class D extends C {
+class DD extends CC {
 	public void metodo() {
 		System.out.println("D");
-		super.metodo();
+//		super.metodo();
 	}
 	
 	public void metodo2() {
 		System.out.println("E");
 		metodo();
-		super.metodo();
+//		super.metodo();
 	}
 	
 	public static void main(String[] args) {
-		new D().metodo2();
+		new DD().metodo2();
 	}
 }
 

@@ -34,15 +34,15 @@ public class TestaHeranca {
 
 }
 
-class Mae {
+class Maes {
 
 }
 
-class Filha extends Mae {
+class Filhas extends Mae {
 
 }
 
-class Neta extends Filha {
+class Neta extends Filhas {
 
 }
 

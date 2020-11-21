@@ -1,8 +1,5 @@
 package br.com.alura.lidandocomexcecoes;
 
-import java.util.ArrayList;
-import java.util.Date;
-
 public class TestaExceptions4 {
 
 	public static void main(String[] args) {
